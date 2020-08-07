@@ -8,7 +8,7 @@ export @run
 macro run(command::String)
     # find the filename to include
     # TODO: Remove multiple and trailing whitespaces
-    args_list = split(command, " ")
+    args_list = split(command)
     inc_file = popfirst!(args_list)
 
     # check if args need to be modified
