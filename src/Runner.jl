@@ -1,11 +1,11 @@
 module Runner
 
-export @run
+export @runit
 
 """
 
 """
-macro run(command::String)
+macro runit(command::String)
     # find the filename to include
     # TODO: Remove multiple and trailing whitespaces
     args_list = split(command)
