@@ -1,13 +1,13 @@
 # Runner.jl
 
-**TL;DR** Provides `@run` macro for running scripts with commandline arguments from REPL.
+**TL;DR** Provides `@runit` macro for running scripts with commandline arguments from REPL.
 Instead of
 ````
 $julia script.jl arg1 arg2 arg3
 ````
 use, from REPL
 ```
-julia> @run "script.jl arg1 arg2 arg3"
+julia> @runit "script.jl arg1 arg2 arg3"
 ```
 
 **Advantage**: Avoid the delay in package load times during development. Load it once using REPL and continue using it with commandline arguments.
@@ -23,7 +23,7 @@ julia> include('script.jl')
 ```
 But, in this case, we will not be able to provide command line arguments. Work around is to define a function which takes in arguments and manually calling it. Not neat!
 
-This package exists to overcome this difficulty. It provide a macro `@run` which will let you run script from REPL with commandline arguments.
+This package exists to overcome this difficulty. It provide a macro `@runit` which will let you run script from REPL with commandline arguments.
 
 ## How?
 ### Simple use case
@@ -39,7 +39,7 @@ $julia hello.jl Julia
 ```
 To run this from REPL, use
 ```
-julia> @run hello.jl Julia
+julia> @runit hello.jl Julia
 ```
 
 ### Use with `ArgParse`
@@ -72,9 +72,9 @@ Namaste Julia!
 ```
 From REPL
 ```
-julia> @run "hello2.jl Julia"
+julia> @runit "hello2.jl Julia"
 Hello Julia!
 
-julia> @run "hello2.jl Julia --greet Namaste"
+julia> @runit "hello2.jl Julia --greet Namaste"
 Namaste Julia!
 ```
