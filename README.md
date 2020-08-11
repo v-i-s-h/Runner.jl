@@ -1,6 +1,10 @@
 # Runner.jl
+[![deps](https://juliahub.com/docs/Runner/deps.svg)](https://juliahub.com/ui/Packages/Runner/cIbjU?t=2)
+[![version](https://juliahub.com/docs/Runner/version.svg)](https://juliahub.com/ui/Packages/Runner/cIbjU)
+[![pkgeval](https://juliahub.com/docs/Runner/pkgeval.svg)](https://juliahub.com/ui/Packages/Runner/cIbjU)
 
 **TL;DR** Provides `@runit` macro for running scripts with commandline arguments from REPL.
+
 Instead of
 ````
 $julia script.jl arg1 arg2 arg3

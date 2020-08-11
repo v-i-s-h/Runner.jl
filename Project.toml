@@ -1,7 +1,7 @@
 name = "Runner"
 uuid = "847b7089-1ebf-4e83-b33e-c3c97d2ccb04"
 authors = ["v-i-s-h <get_vichu@yahoo.com> and contributors"]
-version = "0.1.0"
+version = "0.2.0"
 
 [compat]
 julia = "1"
